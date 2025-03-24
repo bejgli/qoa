@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qoa
+  description: The “Quite OK Audio Format” for fast, lossy audio compression
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: qoa
+    circleci.com/project-slug: github/bejgli/qoa
+  tags:
+    - c
+  links:
+    - url: https://qoaformat.org/
+      title: Website
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: library
+  lifecycle: production
+  owner: qoa-team
+  system: libraries
